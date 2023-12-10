@@ -1,0 +1,123 @@
+:root {
+  --font-family: 'Montserrat', sans-serif;
+  --title: 'Montserrat Alternates', sans-serif;
+  --color-primary:#b492fd;
+  --color-secondary: #ad4ef5;
+  --color-azul: #653ddb;
+  --color-box: #eee4f2;
+}
+body {
+  width: 100%;
+  height: 100vh;
+}
+section {
+  font-family: var(--font-family);
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+h2 {
+  font-family: var(--title);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+section .formulario {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  box-shadow: 20px 20px 60px 0px rgba(94, 94, 94, 0.15), -20px -20px 60px 0px rgba(94, 94, 94, 0.15);
+}
+
+section .imagen {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
+  align-self: center;
+
+}
+
+
+/*@media (max-width: 720px) {
+  .formulario {
+      display: grid;
+      grid-template-columns: 2fr;
+      grid-template-rows: repeat(2, 1fr)
+      grid-template-areas: 
+          "botonoes"
+          "aside"
+          "section"
+          "article"
+          "footer";
+  }
+}*/
+
+section .botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+ section .logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  border: solid grey 1px; 
+  border-radius: 10px;
+  margin: 20px;
+ }
+
+
+section .or {
+  text-align: center;
+}
+
+.inputs {
+  padding: 10px;
+}
+
+::placeholder {
+  font-family: var(--font-family);
+  color: var(--color-primary);
+  font-size: medium;
+}
+
+input {
+  width: 100%;
+  height: 50px;
+  border-left: solid var(--color-box);
+  border-radius: 5px;
+}
+
+button {
+  display: flex;
+  place-items: center;
+  margin: 0px 100px 0 100px;
+
+}
+
+.btnsubmit {
+  background-color: var(--color-azul);
+  font-family: var(--font-family);
+  border-radius: 10px;
+  font-size: larger;
+  color: white;
+  width: 300px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section .already {
+  text-align: right;
+  font-weight: 900;
+  color: #653ddb;
+}

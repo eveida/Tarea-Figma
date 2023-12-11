@@ -42,7 +42,6 @@ section .imagen {
   width: 100%;
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
   text-align: center;
-  padding-right: 50px;
   
 }
 

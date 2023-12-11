@@ -37,12 +37,16 @@ section .formulario {
 }
 
 section .imagen {
-  width: 100%;
+  position: relative;
   height: 100vh;
+  width: 100%;
   background: linear-gradient(to right, var(--color-primary), var(--color-secondary));
-  align-self: center;
-
+  text-align: center;
+  padding-right: 50px;
+  
 }
+
+
 
 
 /*@media (max-width: 720px) {
@@ -69,7 +73,7 @@ section .botones {
   align-items: center;
   height: 60px;
   width: 200px;
-  border: solid grey 1px; 
+  border: solid grey 2px; 
   border-radius: 10px;
   margin: 20px;
  }
